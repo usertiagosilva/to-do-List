@@ -7,12 +7,17 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100vh;
+}
+
 body {
     background-image: url("https://source.unsplash.com/2000x900/?landscape");
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     height: 100vh;  
+    background-size: cover;
 }
 
 button {
@@ -25,7 +30,8 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.4s;
+    transition: 0.6s;
+    border-radius: 5px;
 }
 
 button:hover {
@@ -62,16 +68,28 @@ select {
     border: 2px solid;
 }
 
+header h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .todo-container header {
     text-align: center;
-    padding: 0 1rem 1rem;
+    padding: 1rem 1rem 1rem;
     border-bottom: 1px solid #ccc;
+    background-color: #102f5e;
+    border-radius: 8px;
 }
 
 /* Todo Form */
 #todo-form, #edit-form {
     padding: 1rem;
     border-bottom: 1px solid #ccc;
+}
+
+#todo-input, #edit-input {
+    width: 90%;
 }
 
 #todo-form p,
@@ -90,6 +108,8 @@ select {
 
 #cancel-edit-btn {
     margin-top: 1rem;
+    width: 100%;
+    
 }
 
 /* To do toolbar */

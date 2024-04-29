@@ -17,7 +17,7 @@
             <h1>To do List</h1>
         </header>
         <form id="todo-form">
-            <p>Adicione a sua tarefa:</p>
+            <p>Adicione a sua tarefa</p>
             <div class="form-control">
                 <input type="text" id="todo-input" placeholder="O que voce vai fazer?">
                 <button type="submit">
@@ -37,7 +37,7 @@
         </form>
         <div id="toolbar">
             <div id="search">
-                <h4>Pesquisar:</h4>
+                <h4>Pesquisar</h4>
                 <form>
                     <input type="text" id="search-input" placeholder="Buscar">
                     <button id="erase-button">
@@ -46,16 +46,17 @@
                 </form>
             </div>
             <div id="filter">
-                <h4>Filtrar:</h4>
+                <h4>Filtrar</h4>
                 <select id="filter-select">
                     <option value="all">Todos</option>
                     <option value="done">Feitos</option>
-                    <option value="all">A fazer</option>
+                    <option value="todo">A fazer</option>
                 </select>
             </div>
         </div>
         <div id="todo-list">
-            <div class="todo done">
+            <!-- **Testar todo sem localstorage** -->
+            <!-- <div class="todo done">
                 <h3>Estou fazendo alguma coisa...</h3>
                 <button class="finish-todo">
                     <i class="fa-solid fa-check"></i>
@@ -78,7 +79,7 @@
                 <button class="remove-todo">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
-            </div>
+            </div> -->
         </div>
     </div>
 </body>
