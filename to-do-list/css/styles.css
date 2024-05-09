@@ -13,6 +13,8 @@ html {
 
 body {
     background-image: url("https://source.unsplash.com/2000x900/?landscape");
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -58,7 +60,7 @@ select {
     display: none;
 }
 
-/* Todo header */
+/* To do header */
 .todo-container {
     max-width: 450px;
     margin: 3rem auto ;
@@ -82,7 +84,7 @@ header h1 {
     border-radius: 8px;
 }
 
-/* Todo Form */
+/* To do Form */
 #todo-form, #edit-form {
     padding: 1rem;
     border-bottom: 1px solid #ccc;

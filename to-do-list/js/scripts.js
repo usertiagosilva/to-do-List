@@ -1,5 +1,4 @@
 // Seleção de elementos
-
 const todoForm = document.querySelector("#todo-form");
 const todoInput = document.querySelector("#todo-input");
 const todoList = document.querySelector("#todo-list");
@@ -13,7 +12,6 @@ let oldInputValue;
 
 // __________________________________________________________________________________________
 // Funções
-
 // Função para salvar tarefas
 const saveTodo = (text, done = 0, save = 1) => {
 
@@ -48,7 +46,6 @@ const saveTodo = (text, done = 0, save = 1) => {
     if(save) {
         saveTodoLocalStorage({text, done});
     }
-
 
     // Colocar to do na lista geral
     todoList.appendChild(todo);
@@ -129,10 +126,8 @@ const filterTodos = (filterValue) => {
             break;
     }
 }
-
 // __________________________________________________________________________________________________
 // Eventos
-
 // Enviar formulário do input
 todoForm.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -146,7 +141,7 @@ todoForm.addEventListener("submit", (e) => {
 // Identificar o elemento e executar evento
 document.addEventListener("click", (e) => {
     const targetEl = e.target;
-    // selecionar elemento pai mais próximo
+    // Selecionar elemento pai mais próximo
     const parentEl = targetEl.closest("div");
     let todoTitle;
 
@@ -222,7 +217,6 @@ filterBtn.addEventListener("change", (e) => {
 
 //________________________________________________________________________________________________________
 // Local storage
-
 // Função para pegar to do
 const getTodosLocalStorage = () => {
     // converter json em objeto para pegar dados
@@ -284,6 +278,5 @@ const updateTodoLocalStorage = (todoOldText, todoNewText) => {
     // Salvar resultados
     localStorage.setItem("todos", JSON.stringify(todos));
 }
-
 
 loadTodos();
