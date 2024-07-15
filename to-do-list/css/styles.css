@@ -12,14 +12,13 @@ html {
 }
 
 body {
-    background-image: url("https://source.unsplash.com/2000x900/?landscape");
+    background-image: url("../img/bg.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: left;
     align-items: center;
     height: 100vh;  
-    background-size: cover;
 }
 
 button {

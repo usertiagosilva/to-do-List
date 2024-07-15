@@ -10,7 +10,6 @@ const eraseBtn = document.querySelector("#erase-button");
 const filterBtn = document.querySelector("#filter-select");
 let oldInputValue;
 
-// __________________________________________________________________________________________
 // Funções
 // Função para salvar tarefas
 const saveTodo = (text, done = 0, save = 1) => {
@@ -126,7 +125,7 @@ const filterTodos = (filterValue) => {
             break;
     }
 }
-// __________________________________________________________________________________________________
+
 // Eventos
 // Enviar formulário do input
 todoForm.addEventListener("submit", (e) => {
@@ -215,7 +214,7 @@ filterBtn.addEventListener("change", (e) => {
     filterTodos(filterValue)
 });
 
-//________________________________________________________________________________________________________
+
 // Local storage
 // Função para pegar to do
 const getTodosLocalStorage = () => {
