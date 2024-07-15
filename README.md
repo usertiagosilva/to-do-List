@@ -1,3 +1,6 @@
+![Captura de tela 2024-07-05 050745](https://github.com/usertiagosilva/to-do-List/assets/153779722/212a83e6-7318-4e61-9b18-cb9ae3a4368e)
+
+
 # To-Do List
 
 O To-Do List é um projeto desenvolvido com o objetivo de aprofundar o conhecimento em HTML, CSS e JavaScript. Além disso, o projeto visa preparar o desenvolvedor para trabalhar com frameworks populares como React, Vue e Angular.
